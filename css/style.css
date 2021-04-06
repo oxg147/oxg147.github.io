@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Londrina+Solid&family=Merriweather:wght@300&display=swap');
+
+#wrapper {
+  margin: 0 auto;
+  width: 960px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+nav,
+footer {
+  background-color: rgb(255, 236, 208);
+}
+
+section{
+  background-color: #eee;;
+}
+
+header,
+footer {
+  grid-column: 1 / -1;
+  padding-left: 10px;
+}
+
+body {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2{
+  font-family: "Bangers", "Arial";
+}
+
+h3 {
+  font-family: "Londrina Solid", "Helvetica", sans-serif;
+}
+
+
+nav ul {
+  margin: 0;
+  padding: 5px;
+  list-style-type: none;
+
+  display: flex;
+  justify-content: space-between;
+}
+/* nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+nav li {
+  float: left;
+  list-style-type: none;
+  padding: 10px;
+  margin-right: 10px;
+} */
+
+nav ul a{
+  display: block;
+  /* border: 1px solid;
+  border-radius: .5em; */
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited{
+  color: rgb(35, 31, 32);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(192, 31, 44);
+}
+
+a:active {
+  color: rgb(255, 255, 255);
+}
+
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+
+  grid-template-areas:
+    "introduction          introduction    introduction"
+    "militaryandsecurity   geography       peopleandsociety"
+}
+
+section {
+  padding: 10px;
+}
+
+#introduction {
+  grid-area: introduction;
+}
+
+#geography {
+  grid-area: geography;
+}
+
+#peopleandsoceity {
+  grid-area: peopleandsociety;
+}
+
+#militaryandsecurity {
+  grid-area: militaryandsecurity;
+}
