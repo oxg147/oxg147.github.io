@@ -9,8 +9,27 @@
   grid-gap: 20px;
 }
 
+h1 {
+  font-size: 65px;
+  text-align: center;
+  color: rgb(192, 31, 44);
+}
+
+ul {
+  /* margin: 0; */
+  padding-left: 15px;
+}
+
 h2 {
+  color: rgb(192, 31, 44);
   margin-top: 0;
+  font-size: 30px;
+}
+
+img {
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 5px;
 }
 
 nav,
@@ -25,7 +44,6 @@ section{
 header,
 footer {
   grid-column: 1 / -1;
-  padding-left: 10px;
 }
 
 body {
@@ -40,6 +58,15 @@ h2{
 
 h3 {
   font-family: "Londrina Solid", "Helvetica", sans-serif;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgb(192, 31, 44);
+  width: 100%;
 }
 
 
@@ -51,24 +78,9 @@ nav ul {
   display: flex;
   justify-content: space-between;
 }
-/* nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-}
-nav li {
-  float: left;
-  list-style-type: none;
-  padding: 10px;
-  margin-right: 10px;
-} */
 
 nav ul a{
   display: block;
-  /* border: 1px solid;
-  border-radius: .5em; */
 }
 
 a:link {
