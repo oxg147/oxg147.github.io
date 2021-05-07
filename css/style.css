@@ -48,10 +48,12 @@ img:hover{
   z-index: 10;
   transition: all 1s ease-in;
 }
+h1,
 nav,
 footer {
   background-color: rgb(255,153,204,.4);
 }
+
 nav ul {
   margin: 0;
   padding: 5px;
@@ -81,11 +83,11 @@ a:active {
   color: rgb(255,153,204);
 }
 
-h1,
+
 h2,
 h3,
 title{
-  text-align: center;
+  text-align: left;
 }
 
 h1,
@@ -102,7 +104,7 @@ h1{
 }
 
 h2{
-  font-size: 35px;
+  font-size: 40px;
   margin-top: 10px;
   color: rgb(255,153,204);
 }
@@ -117,6 +119,9 @@ section{
   padding: 10px;
 }
 
+footer{
+  padding: 10px;
+}
 
 #title{
   position: fixed;
