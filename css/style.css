@@ -42,6 +42,7 @@ img{
   margin-left: auto;
   margin-right: auto;
   width: 95%;
+  border: 1px solid black;
 }
 img:hover{
   transform: scale(1.1);
