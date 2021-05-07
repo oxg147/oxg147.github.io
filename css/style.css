@@ -1,133 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Londrina+Solid&family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Londrina+Sketch&family=Permanent+Marker&family=Pompiere&display=swap');
 
-#wrapper {
+
+body {
+  background-color: rgba(250,239,231,.2);
+}
+
+#wrapper{
   margin: 0 auto;
   width: 960px;
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 20px;
+  grid-gap: 20px
 }
 
-
-h1 {
-  font-size: 65px;
-  text-align: center;
-  color: rgb(192, 31, 44);
+#main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-ul {
-  /* margin: 0; */
-  padding-left: 15px;
-}
-
-h2 {
-  color: rgb(192, 31, 44);
-  margin-top: 0;
-  font-size: 30px;
-}
-
-img {
-  float: left;
-  padding-right: 10px;
-  padding-bottom: 5px;
-}
-
-nav,
-footer {
-  background-color: rgb(255, 236, 208);
-}
-
-section{
-  background-color: #eee;;
-}
-
-header,
-footer {
-  grid-column: 1 / -1;
-}
-
-body {
-  font-family: "Merriweather", sans-serif;
-  font-weight: 300;
-}
-
-h1,
-h2{
-  font-family: "Bangers", "Arial";
-}
-
-h3 {
-  font-family: "Londrina Solid", "Helvetica", sans-serif;
-  margin-left: 0;
-  margin-bottom: 0;
-}
-
-table,
-th,
-td {
-  border: 1px solid rgb(192, 31, 44);
+#index{
+  display: grid;
+  grid-template-columns: 1fr;
   width: 100%;
 }
 
+#aboutme{
+  display: grid;
+  grid-template-columns: 1fr ;
+}
 
+#meimage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+img:hover{
+  transform: scale(1.1);
+  z-index: 10;
+  transition: all 1s ease-in;
+}
+nav,
+footer {
+  background-color: rgb(255,153,204,.4);
+}
 nav ul {
   margin: 0;
   padding: 5px;
   list-style-type: none;
 
+
   display: flex;
   justify-content: space-between;
 }
 
-nav ul a{
-  display: block;
-}
+
 
 a:link {
   text-decoration: none;
 }
 
 a:visited{
-  color: rgb(35, 31, 32);
+  color: #5AB9EA;
 }
 
 a:hover {
   text-decoration: underline;
-  color: rgb(192, 31, 44);
+  color: #000000;
 }
 
 a:active {
-  color: rgb(255, 255, 255);
+  color: rgb(255,153,204);
 }
 
-
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-
-  grid-template-areas:
-    "introduction          introduction    introduction"
-    "militaryandsecurity   geography       peopleandsociety"
+h1,
+h2,
+h3,
+title{
+  text-align: center;
 }
 
-section {
+h1,
+h2,
+h3,
+nav{
+  font-family: "Permanent Marker";
+}
+
+h1{
+  font-size: 75px;
+  margin: 0;
+  color: rgb(102,178,255);
+}
+
+h2{
+  font-size: 35px;
+  margin-top: 10px;
+  color: rgb(255,153,204);
+}
+
+h3{
+  margin: 0;
+}
+
+section{
+  font-family:"Pompiere";
+  font-size: 20px;
   padding: 10px;
 }
 
-#introduction {
-  grid-area: introduction;
-}
 
-#geography {
-  grid-area: geography;
-}
-
-#peopleandsoceity {
-  grid-area: peopleandsociety;
-}
-
-#militaryandsecurity {
-  grid-area: militaryandsecurity;
+#title{
+  position: fixed;
 }
